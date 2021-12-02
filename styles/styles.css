@@ -1,0 +1,10 @@
+body {
+    /* background-color: red; */
+}
+h1 {
+    color: #bca000;
+}
+h1 span {
+    font-weight: normal;
+    font-style: italic;
+}
