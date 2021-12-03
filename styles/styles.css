@@ -3,6 +3,7 @@ body {
 }
 h1 {
     color: #684bca;
+    padding-left: 35%;
 }
 h1 span {
     font-weight: normal;
@@ -46,6 +47,7 @@ img{
     max-height: 140px;
 }
 nav{
+    /* display: none; */
     clear: both;
     display: block;
     height: fit-content;
@@ -63,7 +65,7 @@ ul{
     padding-bottom: 100%; */
 }
 li{
-    padding: 30px;
+    padding: 20px;
     /* padding-top: 30px;
     padding-bottom: 30px; */
     font-size: 20px;
@@ -79,10 +81,23 @@ li a:hover {
 ul li ul{
     padding-top: 10px;
     padding-bottom: 10px;
+    /* display: none; */
+    /* position: absolute; */
 }
 ul li ul li{
-    padding:15px;
+    padding:10px;
 }
+/* #projects:hover ul{
+    display: block;
+}
+#project-option{
+    _zoom:1;
+}
+#project-option:after{
+    content: "";
+    clear: both;
+    display: block;
+} */
 .container{
     background-color: rgba(147, 151, 240, 0.25);
     width: 100%;
@@ -90,13 +105,61 @@ ul li ul li{
     float: left;
 }
 .content{
-    float: left;
-    padding-left: 35%;
+    /* float: left; */
+    padding-left: 15%;
+    padding-right: 2%;
     padding-top: 2%;
 }
 #project-list{
     display: inline-block;
 }
 #project-list li{
+    height: auto; 
+    width: auto;
+    max-width: 30%;
     display: inline-block;
+    border: 3px solid #684bca;
+    padding: 10px;
+    margin: 10px;
+}
+#project-list li p{
+   font-size: medium;
+}
+#project-list li span{
+    font-size: medium;
+ }
+
+li button {
+	 padding: 10px 15px 10px 15px;
+	background: #9397f0;
+	color: #ffffff;
+	border-color: #eea236;
+	border-radius: 5px 5px 5px 5px;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center; 
+}
+li button:hover {
+    background-color: #ffffff;
+    color:#9397f0;
+}
+button {
+	padding: 15px 5px 15px 5px;
+	background: #e0ac49;
+	color: #684bca;
+	border-color: #684bca;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+    /* margin-left: 40%; */
+}
+#vote{
+    margin-left: 42%;
+}
+#vote:hover{
+    background-color: #ffffff;
+    /* color:#9397f0; */
 }
