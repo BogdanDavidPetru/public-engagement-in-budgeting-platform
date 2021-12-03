@@ -14,13 +14,6 @@ $(document).ready(function(){
         }
         return false;
     });
-    // $projectOptionList.on("mouseout",function(){
-    //     if($("#projects:hover").length == 0){
-    //             $projectOptionList.hide();
-    //             $(".content").css("padding-left", "15%");
-    //         return false;
-    //     }
-    //     });
     $.get( "http://jservice.io/api/random?count=10", showQuestions);
 })
 function showQuestions(data) {

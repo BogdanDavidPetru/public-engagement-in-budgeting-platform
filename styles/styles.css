@@ -163,3 +163,47 @@ button {
     background-color: #ffffff;
     /* color:#9397f0; */
 }
+
+.label-1 {
+	width: 285px;
+	height: 45px;
+	color: #999999;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 18px;
+	text-align: left;
+}
+.rectangle-13 {
+	width: 54px;
+	height: 75px;
+	padding: 8px 8px 8px 8px;
+	background: #eeeeee;
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px 0px 0px 3px;
+}
+/* input[type=text] {
+	width: 22px;
+	height: 36px;
+	background: #000000;
+} */
+input[type=text] {
+	padding: 8px 8px 8px 8px;
+
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0px 3px 3px 0px;
+}
+input[type=password] {
+	padding: 8px 8px 8px 8px;
+
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0px 3px 3px 0px;
+}
+.container form{
+    padding-left: 40%;
+}
