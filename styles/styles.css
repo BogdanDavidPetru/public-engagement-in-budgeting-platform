@@ -2,9 +2,101 @@ body {
     /* background-color: red; */
 }
 h1 {
-    color: #bca000;
+    color: #684bca;
 }
 h1 span {
     font-weight: normal;
     font-style: italic;
+}
+.banner{
+    background-color: #9397f0;
+    opacity: 75%;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* text-align: center; */
+}
+.banner div{
+    position: relative;
+    padding-top: 50px;
+    float: left;
+}
+#first-title{
+    padding-left: 40%;
+}
+#first-title span{
+    color: #684bca;
+}
+span{
+    opacity: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #bca000;
+    padding: 0px;
+}
+img{
+    float: left;
+    height: auto; 
+    width: auto; 
+    padding:0px;
+    max-width: 140px; 
+    max-height: 140px;
+}
+nav{
+    clear: both;
+    display: block;
+    height: fit-content;
+    width:fit-content;
+    float: left;
+    background-color: #e0ac49;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* padding-top: 100%;
+    padding-bottom: 100%; */
+}
+li{
+    padding: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    font-size: 20px;
+    font-weight: bold;
+    color:#684bca;
+}
+li a { color: inherit;
+    text-decoration: inherit; } 
+li a:hover {
+    color: white;
+   /* background-color: white;
+*/  }
+ul li ul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li ul li{
+    padding:15px;
+}
+.container{
+    background-color: rgba(147, 151, 240, 0.25);
+    width: 100%;
+    /* opacity: 25%; */
+    float: left;
+}
+.content{
+    float: left;
+    padding-left: 35%;
+    padding-top: 2%;
+}
+#project-list{
+    display: inline-block;
+}
+#project-list li{
+    display: inline-block;
 }
