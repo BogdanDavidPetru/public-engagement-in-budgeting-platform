@@ -108,7 +108,7 @@ ul li ul li{
     /* float: left; */
     padding-left: 15%;
     padding-right: 2%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 #project-list{
     display: inline-block;
@@ -158,7 +158,7 @@ button {
 }
 #vote{
     margin-left: 42%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 #vote:hover{
     background-color: #ffffff;
@@ -207,14 +207,10 @@ input[type=password] {
 	border-style: solid; */
 	border-radius: 0px 3px 3px 0px;
 }
-.container form{
-    padding-left: 35%;
-    padding-top: 8%;
-}
 .fa-user{
     background-color: #eeeeee;
     opacity: 80%;
-    padding: 14px 15px 16px 15px;;
+    padding: 14px 15px 16px 15px;
 
 }
 .fa-asterisk{
@@ -248,7 +244,7 @@ form div{
   #login-form {
     /* position: relative; */
     top: 0;
-    background-color: rgba(76, 175, 80, 0.7);
+    background-color: rgba(147, 151, 240, 0.25);
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -275,6 +271,62 @@ form #login{
 	text-align: center;
 }
 form #cancel {
+	padding: 10px 30px 10px 30px;
+	background: #9397f0;
+	color: #ffffff;
+	border-color: #eea236;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: medium;
+	text-align: center;
+}
+
+#register i{
+    	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+    padding: 10px 15px 12px 15px;
+}
+#register input{
+    border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 50px 10px 15px;
+}
+#register #address{
+    padding: 10px 200px 10px 15px;
+}
+#register label{
+    padding-right: 100px;
+}
+#register button{
+    margin: 30px 40px 15px 0px;
+}
+.fas{
+    background-color: #eeeeee;
+    opacity: 80%;
+    padding: 14px 15px 16px 15px;
+
+}
+h2{
+    color: #bca000;
+    padding-left: 15%;
+}
+form select{
+    font-size: medium;
+    padding: 5px 10px 5px 2px;
+    margin-bottom: 15px;
+}
+#register{
+    padding-left: 15%;
+}
+#institution-input{
+    display: none;
+}
+form #create-account {
 	padding: 10px 30px 10px 30px;
 	background: #9397f0;
 	color: #ffffff;
