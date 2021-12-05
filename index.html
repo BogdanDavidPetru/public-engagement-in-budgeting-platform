@@ -7,6 +7,7 @@
         <TITLE>Platform for public engagement in City budgeting</TITLE>
         <LINK rel="stylesheet" href="styles/styles.css" type="text/css">
             <script src="scripts/scripts.js" type="text/javascript"></script>
+            <script src="https://kit.fontawesome.com/094a248657.js" crossorigin="anonymous"></script>
     </HEAD>
     <BODY>
         <div class="banner">
@@ -22,11 +23,11 @@
                 <li>
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li id="login-option">
                     <a href="#">Login</a>
                 </li>
                 <li>
-                    <a href="#">Register</a>
+                    <a href="register.html">Register</a>
                 </li>
                 <li id="projects">
                     <a  href="#">Projects</a> 
@@ -45,19 +46,19 @@
         <div class="content">
             <h1>Welcome to BudgeTycoon</h1>
             <ul id="project-list">
-                <!-- <li>
-                    Proiect 1
-                </li>
-                <li>
-                    Proiect 2
-                </li>
-                <li>
-                    Proiect 3
-                </li> -->
             </ul>
             <button id="vote">
                 VOTE NOW
             </button>
+        </div>
+
+        <div class="backdrop">
+            <form id="login-form">
+               <div><i class="fas fa-user"></i><input type="text" placeholder="Phone nr or Email"></div> 
+               <div><i class="fas fa-asterisk"></i><input type="password" placeholder="Password"></div>
+               <button id="login">Login</button>
+               <button id="cancel">Cancel</button>
+            </form>
         </div>
     </div>
     </BODY>

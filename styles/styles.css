@@ -1,5 +1,5 @@
 body {
-    /* background-color: red; */
+    margin:0px;
 }
 h1 {
     color: #684bca;
@@ -108,7 +108,7 @@ ul li ul li{
     /* float: left; */
     padding-left: 15%;
     padding-right: 2%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 #project-list{
     display: inline-block;
@@ -158,8 +158,182 @@ button {
 }
 #vote{
     margin-left: 42%;
+    margin-bottom: 30px;
 }
 #vote:hover{
     background-color: #ffffff;
     /* color:#9397f0; */
+}
+
+.label-1 {
+	width: 285px;
+	height: 45px;
+	color: #999999;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 18px;
+	text-align: left;
+}
+.rectangle-13 {
+	width: 54px;
+	height: 75px;
+	padding: 8px 8px 8px 8px;
+	background: #eeeeee;
+	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px 0px 0px 3px;
+}
+/* input[type=text] {
+	width: 22px;
+	height: 36px;
+	background: #000000;
+} */
+input[type=text] {
+	padding: 15px 15px 15px 15px;
+    font-size: medium;
+    border-width: 0px;
+	/* border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid; */
+	border-radius: 0px 3px 3px 0px;
+}
+input[type=password] {
+	padding: 15px 15px 15px 30px;
+    border-width: 0px;
+    font-size: medium;
+	/* border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid; */
+	border-radius: 0px 3px 3px 0px;
+}
+.fa-user{
+    background-color: #eeeeee;
+    opacity: 80%;
+    padding: 14px 15px 16px 15px;
+
+}
+.fa-asterisk{
+    background-color: #eeeeee;
+    opacity: 80%;
+    padding: 14px 15px 16px 15px;
+
+}
+form div{
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px 3px 3px 0px;
+    width: fit-content;
+    margin: 80px 0px 10px 0px;
+}
+.backdrop {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 0px; /* Full width */
+    height: 0px; /* Full height */
+    overflow: inherit; /* Enable scroll if needed */
+    /*   background-color: rgb(0,0,0); Fallback color */
+     background-color: rgba(200,200,200,0.6); 
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+  }
+  #login-form {
+    /* position: relative; */
+    top: 0;
+    background-color: rgba(147, 151, 240, 0.25);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 0px; /*500px;;*/
+    width: 0px; /* 400px;*/
+    border-radius: 50px;
+    border-color: black;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+  }
+
+form button{
+    margin:60px 40px 0px 0px ;
+}
+form #login{
+	padding: 10px 30px 10px 30px;
+	background: #f0ad4e;
+	color: #ffffff;
+	border-color: #eea236;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: medium;
+	text-align: center;
+}
+form #cancel {
+	padding: 10px 30px 10px 30px;
+	background: #9397f0;
+	color: #ffffff;
+	border-color: #eea236;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: medium;
+	text-align: center;
+}
+
+#register i{
+    	border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+    padding: 10px 15px 12px 15px;
+}
+#register input{
+    border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 50px 10px 15px;
+}
+#register #address{
+    padding: 10px 200px 10px 15px;
+}
+#register label{
+    padding-right: 100px;
+}
+#register button{
+    margin: 30px 40px 15px 0px;
+}
+.fas{
+    background-color: #eeeeee;
+    opacity: 80%;
+    padding: 14px 15px 16px 15px;
+
+}
+h2{
+    color: #bca000;
+    padding-left: 15%;
+}
+form select{
+    font-size: medium;
+    padding: 5px 10px 5px 2px;
+    margin-bottom: 15px;
+}
+#register{
+    padding-left: 15%;
+}
+#institution-input{
+    display: none;
+}
+form #create-account {
+	padding: 10px 30px 10px 30px;
+	background: #9397f0;
+	color: #ffffff;
+	border-color: #eea236;
+	border-radius: 10px 10px 10px 10px;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: medium;
+	text-align: center;
 }
