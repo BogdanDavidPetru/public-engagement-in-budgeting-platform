@@ -18,22 +18,10 @@ $(document).ready(function(){
     var $cancelForm = $("#cancel");
     $cancelForm.on("click",function(){
         if($loginForm.is(":visible")){
-            // clearFormErrors();
-            //$questionForm.hide();
             $onlyForm.animate({height:"0px"},1000,function(){$onlyForm.animate({width:"0px"},1000,function(){$onlyForm.hide().delay(500); $loginForm.animate({height:"0px"},1000,function(){$loginForm.animate({width:"0px"},1000,function(){$loginForm.hide().delay(500)})})})});
         }
         return false;
     })
-
-    // var $institutionOption=$("#institution-option");
-    // var $institutionForm=$("#institution-input");
-    // var $individualOption=$("#individual-input");
-    // $institutionOption.on("selected",function(){
-    //     alert("pula");
-    //     $individualOption.hide();
-    //     $institutionForm.show();
-    // })
-
     var $projects = $("#projects");
     var $projectOptionList = $("#project-option");
     $projectOptionList.hide();

@@ -270,6 +270,9 @@ form #login{
 	font-size: medium;
 	text-align: center;
 }
+#login-button{
+    padding: 10px 30px 10px 30px !important;
+}
 form #cancel {
 	padding: 10px 30px 10px 30px;
 	background: #9397f0;

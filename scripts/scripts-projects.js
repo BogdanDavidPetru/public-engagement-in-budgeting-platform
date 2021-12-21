@@ -1,8 +1,6 @@
 $(document).ready(function(){
     var $loginForm = $(".backdrop");
     $loginForm.hide();
-    var $accountOption = $("#account-option");
-    $accountOption.hide();
     var $loginOption=$("#login-option");
     var $onlyForm = $("#login-form");
     $loginOption.on("click",function(){
@@ -24,22 +22,6 @@ $(document).ready(function(){
         }
         return false;
     })
-
-    var $loginButton = $("#login-button");
-    $loginButton.on("click",function(){
-        if($loginForm.is(":visible")){
-            var $emailLogin = $("#login-email");
-            var $passwordLogin = $("#login-password");
-            if($emailLogin.val()=='admin' && $passwordLogin.val()=='admin'){
-                $onlyForm.animate({height:"0px"},1000,function(){$onlyForm.animate({width:"0px"},1000,function(){$onlyForm.hide().delay(500); $loginForm.animate({height:"0px"},1000,function(){$loginForm.animate({width:"0px"},1000,function(){$loginForm.hide().delay(500)})})})});
-                $loginOption.hide();
-                $("#register-option").hide();
-                $accountOption.show();
-            }
-        }
-        return false;
-    })
-
     var $projects = $("#projects");
     var $projectOptionList = $("#project-option");
     $projectOptionList.hide();
@@ -55,15 +37,12 @@ $(document).ready(function(){
         }
         return false;
     });
-    $.get( "http://jservice.io/api/random?count=10", showQuestions);
+    function allowDrop(ev) {
+        ev.preventDefault();
+      }
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
 })
-function showQuestions(data) {
-    $( data ).each ( function () {    
-    $("<li>")
-    .append( $("<span>").addClass("answer").text("Answer: " + this.answer))
-     .append( $("<p>").addClass("value").text("Value: "+this.value))
-     .append($("<button>").addClass("").text("View statistics"))
-    .appendTo("#project-list")
-    });
-    
-} 
