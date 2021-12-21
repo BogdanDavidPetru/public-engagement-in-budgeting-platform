@@ -1,6 +1,8 @@
 $(document).ready(function(){
     var $loginForm = $(".backdrop");
     $loginForm.hide();
+    var $accountOption = $("#account-option");
+    $accountOption.hide();
     var $loginOption=$("#login-option");
     var $onlyForm = $("#login-form");
     $loginOption.on("click",function(){
@@ -21,6 +23,21 @@ $(document).ready(function(){
             // clearFormErrors();
             //$questionForm.hide();
             $onlyForm.animate({height:"0px"},1000,function(){$onlyForm.animate({width:"0px"},1000,function(){$onlyForm.hide().delay(500); $loginForm.animate({height:"0px"},1000,function(){$loginForm.animate({width:"0px"},1000,function(){$loginForm.hide().delay(500)})})})});
+        }
+        return false;
+    })
+
+    var $loginButton = $("#login-button");
+    $loginButton.on("click",function(){
+        if($loginForm.is(":visible")){
+            var $emailLogin = $("#login-email");
+            var $passwordLogin = $("#login-password");
+            if($emailLogin.val()=='admin' && $passwordLogin.val()=='admin'){
+                $onlyForm.animate({height:"0px"},1000,function(){$onlyForm.animate({width:"0px"},1000,function(){$onlyForm.hide().delay(500); $loginForm.animate({height:"0px"},1000,function(){$loginForm.animate({width:"0px"},1000,function(){$loginForm.hide().delay(500)})})})});
+                $loginOption.hide();
+                $("#register-option").hide();
+                $accountOption.show();
+            }
         }
         return false;
     })
