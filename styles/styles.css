@@ -340,3 +340,7 @@ form #create-account {
 	font-size: medium;
 	text-align: center;
 }
+form #create-account:hover {
+    background-color: white;
+    color:#9397f0;
+}

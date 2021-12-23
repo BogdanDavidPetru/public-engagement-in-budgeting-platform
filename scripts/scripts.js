@@ -26,6 +26,8 @@ $(document).ready(function(){
     })
 
     var $loginButton = $("#login-button");
+    var $personalProjects = $("#personal-projects");
+    $personalProjects.hide();
     $loginButton.on("click",function(){
         if($loginForm.is(":visible")){
             var $emailLogin = $("#login-email");
@@ -35,6 +37,7 @@ $(document).ready(function(){
                 $loginOption.hide();
                 $("#register-option").hide();
                 $accountOption.show();
+                $personalProjects.show();
             }
         }
         return false;

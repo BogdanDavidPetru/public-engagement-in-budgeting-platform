@@ -38,6 +38,8 @@ $(document).ready(function(){
         return false;
     });
 
+    
+
      var $institutionForm=$("[id=institution-input]");
     var $individualOption=$("[id=individual-input]");
     $("#person-type").change(function(){
@@ -52,4 +54,25 @@ $(document).ready(function(){
             $individualOption.show();
         }
       });
+
+    //   var $accountOption = $("#account-option");
+    //  $accountOption.hide();
+    //   var $loginButton = $("#login-button");
+    //   var $personalProjects = $("#personal-projects");
+    //   $personalProjects.hide();
+    //   $loginButton.on("click",function(){
+    //     if($loginForm.is(":visible")){
+    //         var $emailLogin = $("#login-email");
+    //         var $passwordLogin = $("#login-password");
+    //         if($emailLogin.val()=='admin' && $passwordLogin.val()=='admin'){
+    //             $onlyForm.animate({height:"0px"},1000,function(){$onlyForm.animate({width:"0px"},1000,function(){$onlyForm.hide().delay(500); $loginForm.animate({height:"0px"},1000,function(){$loginForm.animate({width:"0px"},1000,function(){$loginForm.hide().delay(500)})})})});
+    //             $loginOption.hide();
+    //             $("#register-option").hide();
+    //             $accountOption.show();
+    //             $personalProjects.show();
+    //             window.location.replace("index.html");
+    //         }
+    //     }
+    //     return false;
+    // })
 })

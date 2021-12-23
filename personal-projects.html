@@ -30,7 +30,7 @@
                     <a  href="#">Projects</a> 
                     <ul id="project-option">
                         <li><a href="propose-project.html">Propose new project</a></li>
-                        <li><a href="personal-projects.html">Personal projects</a></li>
+                        <li><a href="#">Personal projects</a></li>
                         <li><a href="proposed-projects.html">Proposed projects</a></li>
                         <li><a href="#">Implemented projects</a></li>
                     </ul>
@@ -42,26 +42,32 @@
         </nav>
 
         <div class="content">
-            <h1>Propose new project</h1>
-            <form>
-                <i class="fas fa-file-alt"></i><input id="individual-input" type="text" placeholder="Description">
-                <label>Project Type</label>
-               <select id="project-type" name="project-type">
-                <option value="individual">Arrangement of public spaces</option>
-                <option value="institution">Mobility and traffic safety</option>
-                <option value="institution">Green spaces</option>
-                <option value="institution">Educational and cultural infrastructure</option>
-            </select><br>
-            <div>
-                <button id="draw">
-                    Draw 3D schema
-                </button>
-                  <span> Attach 3D schema</span>
-            </div>
-              <button id="submit">
-                SUBMIT
-              </button>
-            </form>
+            <h1>All your proposed projects</h1>
+            <ul id="ackn-list">
+                <li>
+                    <i class="fas fa-award fa-2x"></i><span>Thank you for contributing, during the last 2 years, to the city budgeting with your brilliant ideas!</span>
+                </li>
+                <li>
+                    <i class="fas fa-hourglass-half fa-2x"></i><span>Check your projects to see their current stage and progress!</span>
+                </li>
+            </ul>
+            <!-- <h2> We appreciate your time and work and we are looking forward to s.</h2> -->
+            <ul id="project-list">
+                <li>
+                    <div onclick="location.href='project-details.html';" style="cursor: pointer;">
+                    <h2>Cluj-Napoca - Oradea Highway</h2>
+                    <i class="fas fa-road fa-4x"></i>
+                    <p>A faster and safer option for the Cluj-Oradea route as a lot of accidents happened recently due to the high trafic and the low quality roads. </p>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="location.href='project-details.html';" style="cursor: pointer;">
+                    <h2>Public Olympic Swimming Pool</h2>
+                    <i class="fas fa-swimmer fa-4x"></i>
+                    <p>A new and mondern public olympic swimming pool to promote sports and movement and provide the professional swimmers and water polo teams all the needed conditions.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     </BODY>
