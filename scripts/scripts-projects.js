@@ -22,7 +22,6 @@ $(document).ready(function(){
         }
         return false;
     })
-
     var $projects = $("#projects");
     var $projectOptionList = $("#project-option");
     $projectOptionList.hide();
@@ -38,19 +37,12 @@ $(document).ready(function(){
         }
         return false;
     });
-
-     var $institutionForm=$("[id=institution-input]");
-    var $individualOption=$("[id=individual-input]");
-    $("#person-type").change(function(){
-        var cur_value = $('#person-type option:selected').text();
-        console.log(cur_value);
-        if(cur_value==="Institution"){
-            $individualOption.hide();
-            $institutionForm.show();
-        }
-        if(cur_value==="Individual"){
-            $institutionForm.hide();
-            $individualOption.show();
-        }
-      });
+    function allowDrop(ev) {
+        ev.preventDefault();
+      }
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
 })

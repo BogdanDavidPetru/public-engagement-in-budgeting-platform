@@ -5,8 +5,8 @@
 </script>
     <HEAD>
         <TITLE>Platform for public engagement in City budgeting</TITLE>
-        <LINK rel="stylesheet" href="styles/styles.css" type="text/css">
-            <script src="scripts/scripts.js" type="text/javascript"></script>
+        <LINK rel="stylesheet" href="styles/styles-projects.css" type="text/css">
+            <script src="scripts/scripts-projects.js" type="text/javascript"></script>
             <script src="https://kit.fontawesome.com/094a248657.js" crossorigin="anonymous"></script>
     </HEAD>
     <BODY>
@@ -17,26 +17,23 @@
                     <div>
                    <span>Tycoon</span></div>
         </div>
+        <!-- <div class="spacer">
+            &nbsp;
+        </div> -->
         <div class="container">
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
-                </li>
-                <li id="login-option">
-                    <a href="#">Login</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li id="account-option">
                     <a href="account.html">Account</a>
                 </li>
-                <li id="register-option">
-                    <a href="register.html">Register</a>
-                </li>
                 <li id="projects">
-                    <a  href="#">Projects</a>
+                    <a  href="#">Projects</a> 
                     <ul id="project-option">
                         <li><a href="propose-project.html">Propose new project</a></li>
-                        <li id="personal-projects"><a href="personal-projects.html">Personal projects</a></li>
+                        <li><a href="personal-projects.html">Personal projects</a></li>
                         <li><a href="proposed-projects.html">Proposed projects</a></li>
                         <li><a href="#">Implemented projects</a></li>
                     </ul>
@@ -48,20 +45,25 @@
         </nav>
 
         <div class="content">
-            <h1>Welcome to BudgeTycoon</h1>
-            <ul id="project-list">
-            </ul>
-            <button id="vote">
-                VOTE NOW
-            </button>
-        </div>
-
-        <div class="backdrop">
-            <form id="login-form">
-               <div><i class="fas fa-user"></i><input type="text" id="login-email" placeholder="Phone nr or Email"></div> 
-               <div><i class="fas fa-asterisk"></i><input type="password" id="login-password" placeholder="Password"></div>
-               <button id="login-button">Login</button>
-               <button id="cancel">Cancel</button>
+            <h1>Propose new project</h1>
+            <form>
+                <i class="fas fa-file-alt"></i><input id="individual-input" type="text" placeholder="Description">
+                <label>Project Type</label>
+               <select id="project-type" name="project-type">
+                <option value="individual">Arrangement of public spaces</option>
+                <option value="institution">Mobility and traffic safety</option>
+                <option value="institution">Green spaces</option>
+                <option value="institution">Educational and cultural infrastructure</option>
+            </select><br>
+            <div>
+                <button id="draw">
+                    Draw 3D schema
+                </button>
+                  <span> Attach 3D schema</span>
+            </div>
+              <button id="submit">
+                SUBMIT
+              </button>
             </form>
         </div>
     </div>

@@ -18,6 +18,7 @@ h1 span {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+    /* position: absolute; */
     /* text-align: center; */
 }
 .banner div{
@@ -270,6 +271,9 @@ form #login{
 	font-size: medium;
 	text-align: center;
 }
+#login-button{
+    padding: 10px 30px 10px 30px !important;
+}
 form #cancel {
 	padding: 10px 30px 10px 30px;
 	background: #9397f0;
@@ -336,4 +340,8 @@ form #create-account {
 	font-weight: 400;
 	font-size: medium;
 	text-align: center;
+}
+form #create-account:hover {
+    background-color: white;
+    color:#9397f0;
 }
