@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Rate project</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/style-tdr.css" type="text/css">
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <script src="scripts/scripts-tdr.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/094a248657.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner">
+        <div id="first-title"><span>Budge</span></div>
+        <img src="images/icon-badge.jpg">
+        <div><span>Tycoon</span></div>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li id="login-option">
+                    <a href="#">Login</a>
+                </li>
+                <li id="account-option">
+                    <a href="account.html">Account</a>
+                </li>
+                <li id="register-option">
+                    <a href="register.html">Register</a>
+                </li>
+                <li id="projects">
+                    <a  href="#">Projects</a>
+                    <ul id="project-option">
+                        <li><a href="propose-project.html">Propose new project</a></li>
+                        <li id="personal-projects"><a href="personal-projects.html">Personal projects</a></li>
+                        <li><a href="proposed-projects.html">Proposed projects</a></li>
+                        <li><a href="#">Implemented projects</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Statistics</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Rate [Project Title]</h1>
+            <div class="rate-form">
+                <form action="#">
+                    <div class="head-of-form">
+                        <div class="header-text">
+                            Thank you for your involvement! Please answer the following questions or choose the answer that best describes the overall project.
+                        </div>
+                        <div class="header-image">
+                            <img src="images/city-dummy-image.jpg"/>
+                        </div>
+                    </div>
+                    <div class="row-of-form">
+                        <label for="question1">
+                            <p class="question-body">
+                                <span class="question-index">Question 1</span>
+                                Proin commodo efficitur porttitor. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            </p>
+                        </label>
+                        <textarea id="question1" name="question1" rows="5" cols="150">Answer the question here...</textarea>
+                    </div>
+                    <div class="row-of-form">
+                        <label for="question2">
+                            <p class="question-body">
+                                <span class="question-index">Question 2</span>
+                                Vivamus eleifend augue at venenatis lacinia. Pellentesque vitae urna ac augue molestie laoreet id at magna. Proin vulputate nunc nec?
+                            </p>
+                        </label>
+                        <textarea id="question2" name="question1" rows="5" cols="150">Answer the question here...</textarea>
+                    </div>
+                    <div class="row-of-form">
+                        <div class="half-row-left-of-form">
+                            <p class="question-body">
+                                <span class="question-index">Question 3</span>
+                                Duis pulvinar elit in ex convallis, et condimentum neque?
+                            </p>
+                            <div class="answer">
+                                <input type="radio" id="q3option1" name="question3" value="best-answer">
+                                <label for="q3option1">Best answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q3option2" name="question3" value="good-answer">
+                                <label for="q3option2">Good answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q3option3" name="question3" value="neutral-answer">
+                                <label for="q3option3">Neutral answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q3option4" name="question3" value="bad-answer">
+                                <label for="q3option4">Bad answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q3option5" name="question3" value="worst-answer">
+                                <label for="q3option5">Worst answer</label>
+                            </div>
+                        </div>
+                        <div class="half-row-right-of-form">
+                            <p class="question-body">
+                                <span class="question-index">Question 4</span>
+                                Morbi ut risus ut arcu aliquam laoreet. Proin ultrices eget?
+                            </p>
+                            <div class="answer">
+                                <input type="radio" id="q4option1" name="question3" value="best-answer">
+                                <label for="q4option1">Best answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q4option2" name="question3" value="good-answer">
+                                <label for="q4option2">Good answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q4option3" name="question3" value="neutral-answer">
+                                <label for="q4option3">Neutral answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q4option4" name="question3" value="bad-answer">
+                                <label for="q4option4">Bad answer</label>
+                            </div>
+                            <div class="answer">
+                                <input type="radio" id="q4option5" name="question3" value="worst-answer">
+                                <label for="q4option5">Worst answer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-of-form">
+                        <label for="question5">
+                            <p class="question-body">
+                                Final thoughts about the project:
+                            </p>
+                        </label>
+                        <textarea id="question5" name="question5" rows="5" cols="150">Answer the question here...</textarea>
+                    </div>
+                    <input id="submitRate" type="submit" value="Submit">
+                    <input id="cancelRate" type="submit" value="Cancel">
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="backdrop">
+            <form id="login-form">
+                <div><i class="fas fa-user"></i><input type="text" id="login-email" placeholder="Phone nr or Email"></div>
+                <div><i class="fas fa-asterisk"></i><input type="password" id="login-password" placeholder="Password"></div>
+                <button id="login-button">Login</button>
+                <button id="cancel">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.rate-form {
+    background: #9397f0;
+    width: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.rate-form #submitRate {
+    background-color: #eea236;
+    color: #222222;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 0.4s;
+    width: 20%;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24), 0 5px 15px 0 rgba(0,0,0,0.19);
+}
+
+.rate-form #cancelRate {
+    background-color: #684bca;
+    color: #dddddd;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 0.4s;
+    width: 20%;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24), 0 5px 15px 0 rgba(0,0,0,0.19);
+}
+
+.rate-form #submitRate:hover, #cancelRate:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/** Overwrite **/
+.rate-form span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/** Overwrite **/
+.rate-form div {
+    border: none;
+}
+
+.head-of-form {
+    padding: 5px;
+    margin: 5px;
+    width: 97%;
+    height: 100px;
+}
+
+.head-of-form img {
+    max-height: 100px;
+    max-width: 750px;
+    float: right;
+}
+
+.row-of-form {
+    padding: 5px;
+    margin: 5px;
+    width: 97%;
+    height: fit-content;
+}
+
+.half-row-right-of-form {
+    padding-left: 5px;
+    padding-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    width: 48%;
+}
+
+.half-row-left-of-form {
+    padding-left: 3px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    width: 48%
+}
+
+.question-body {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.header-text {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 20%;
+}
+
+.header-image {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    float: right;
+}
+
+.answer {
+    margin: 3px;
+    padding: 2px;
+}
+
