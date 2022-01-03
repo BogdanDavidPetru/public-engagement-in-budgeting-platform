@@ -263,7 +263,7 @@ a:link {
     font-weight: bold;
     margin-bottom: 5%;
 }
-#project-detail i{
+#project-detail .fa-swimmer{
     margin-top: 5%;
     margin-bottom: 1%;
 }
@@ -328,4 +328,26 @@ a:link {
 #reject-button:hover{
     background-color: white;
     color:#bca000;
+}
+.feedback-section{
+    text-align: left;
+    background-color: rgba(104, 75, 202, 0.2);
+    width: fit-content;
+}
+.feedback-header{
+   text-align: center;
+}
+.feedback-header i{
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+.feedback-header span{
+    font-size: x-large;
+}
+.feedback-body p{
+    font-size: large;
+    padding: 2% 5% 2% 5%;
+    color:#684bca;
+    font-weight: bold;
 }

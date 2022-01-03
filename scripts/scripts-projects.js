@@ -45,4 +45,35 @@ $(document).ready(function(){
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
       }
+    
+    $( ".feedback-header" ).html( " <i class='fas fa-arrow-left'></i> <span>" + stages[index] + "</span> <i class='fas fa-arrow-right'></i>");
+    $( ".feedback-body" ).html( "<p>" + feedbacks[index] + "</p>" );
+    $(".fa-arrow-left").on("click",left_feedbacks);  
+    $(".fa-arrow-right").on("click",right_feedbacks);
 })
+
+var index=0;
+
+var stages = ["Finance","Architecture","Voting"];
+var feedbacks=["Your proposed project fits our budget for the year","The architects state that the spot on Sports Street is suitable for your proposed project.","Your project got a 35% majority from the total nr of votes."];
+
+function left_feedbacks(){
+    index--;
+        if(index<0)
+        {
+            index=2;
+        }
+    $( ".feedback-header" ).html( "<i class='fas fa-arrow-left'></i> <span>" + stages[index] + "</span> <i class='fas fa-arrow-right'></i>");
+    $( ".feedback-body" ).html( "<p>" + feedbacks[index] + "</p>" );
+    $(".fa-arrow-left").on("click",left_feedbacks);
+    $(".fa-arrow-right").on("click",right_feedbacks);
+}
+
+function right_feedbacks(){
+    index++;
+    index=index%3;
+    $( ".feedback-header" ).html( " <i class='fas fa-arrow-left'></i> <span>" + stages[index] + "</span> <i class='fas fa-arrow-right'></i>");
+    $( ".feedback-body" ).html( "<p>" + feedbacks[index] + "</p>" );
+    $(".fa-arrow-left").on("click",left_feedbacks);
+    $(".fa-arrow-right").on("click",right_feedbacks);
+}
