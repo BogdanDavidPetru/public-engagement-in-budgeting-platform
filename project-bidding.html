@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bidding </title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <LINK rel="stylesheet" href="styles/styles-projects.css" type="text/css">
+    <link rel="stylesheet" href="styles/styles-bid.css" type="text/css">
+
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <!-- <script src="scripts/scripts-tdr.js" type="text/javascript"></script> -->
+    <script src="scripts/script-bid.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/094a248657.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div id="first-title"><span>Budge</span></div>
+        <img src="images/icon-badge.jpg">
+        <div><span>Tycoon</span></div>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li id="login-option">
+                    <a href="#">Login</a>
+                </li>
+                <li id="account-option">
+                    <a href="account.html">Account</a>
+                </li>
+                <li id="register-option">
+                    <a href="register.html">Register</a>
+                </li>
+                <li id="projects">
+                    <a href="#">Projects</a>
+                    <ul id="project-option">
+                        <li><a href="propose-project.html">Propose new project</a></li>
+                        <li id="personal-projects"><a href="personal-projects.html">Personal projects</a></li>
+                        <li><a href="proposed-projects.html">Proposed projects</a></li>
+                        <li><a href="#">Implemented projects</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Statistics</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Accepted projects in early development phase</h1>
+
+
+            <!-- <div id="project_details" style="width: 25%;">
+                <h2>Roads and pedestrians</h2><i class="fa fa-road fa-4x" aria-hidden="true"></i>
+                <h3>Eligible Projects : 7 </h3>
+            </div> -->
+            <div id="header_options">
+                <div id="search_bar">
+                    <i id="search_icon" class="fa fa-search">
+
+                        <input type="text" id="myInput"  placeholder="Search by keywords" title="Type in a name">
+
+
+                    </i>
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropdown_btn">Category 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a class="menu_optin" id="greed_spaces">Green Spaces</a>
+                        <a class="menu_optin" id="digital">Digital city</a>
+                        <a class="menu_optin" id="educational">Educational and cultural</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="rate-form">
+                <form action="#" id="information_form">
+                    <!-- <div class="head-of-form">
+                        <div class="header-text">
+                            Thank you for your involvement! Please answer the following questions or choose the answer that best describes the overall project.
+
+
+                        </div>
+                        <div class="header-image">
+                            <img src="images/city-dummy-image.jpg" />
+                        </div>
+                    </div> -->
+
+                    <div class="head-of-form">
+                        <i class="fa  fa-tree  fa-3x" id="header_icon" aria-hidden="true"></i>
+                        <h3 id="header_text">
+                            <!-- Sport Equipment Park Iuliu Prodan -->
+                        </h3>
+                    </div>
+                    <div class="row-of-form">
+                        <h3 class="label">
+                            Project Description :
+
+                        </h3>
+                        <!-- <textarea id="question1" name="question1">Answer the question here...</textarea> -->
+                        <div id="project_bidding">
+                            <h3 id="project_detail">
+                                <!-- Paving of the main park alley as well as the surrounding streets. Create a new sport area in the park , that will be equipped with sport equipment -->
+                            </h3>
+                        </div>
+
+                        <br>
+
+
+                    </div>
+
+                    <div class="row-of-form">
+                        <div id="location">
+                            <h3 class="label">
+                                Location :
+
+                            </h3>
+                            <h3 class="info" id="location_text">
+                                <!-- Str. Memorut, nr. 2 -->
+                            </h3>
+                        </div>
+                        <div id="spacer">
+
+                        </div>
+
+                        <div id="deadline">
+                            <h3 class="label">
+                                Deadline:
+
+                            </h3>
+                            <h3 class="info" id="deadline_text">
+                                <!-- 10/10/2019 -->
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <input id="submitRate" type="submit" value="View more">
+                    <input id="cancelRate" type="submit" value="Bid">
+
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="backdrop">
+            <form id="login-form">
+                <!-- <div><i class="fas fa-user"></i><input type="text" id="login-email" placeholder="Phone nr or Email"></div>
+                <div><i class="fas fa-asterisk"></i><input type="password" id="login-password" placeholder="Password"></div>
+                <button id="login-button">Login</button>
+                <button id="cancel">Cancel</button> -->
+
+
+                <div class="head-of-form">
+                    <i class="fa  fa-tree  fa-3x" id="header_icon" aria-hidden="true"></i>
+                    <h3 id="header_text_modal">
+                        Sport Equipment Park Iuliu Prodan
+                    </h3>
+                </div>
+                <div class="row-of-form">
+                    <!-- <textarea id="question1" name="question1">Answer the question here...</textarea> -->
+                    <div id="for_loading_2">
+                        <img src="images/loading2.gif" alt="loading" id="loadingAnimation">
+                    </div>
+                    <div id="deadline_modal">
+                        <h3 class="label">
+                            Deadline:
+
+                        </h3>
+                        <h3 class="info" id="deadline_text_bidding">
+                            10/10/2019
+                        </h3>
+                    </div>
+
+                    <div id="bid_money">
+                        <i id="money_icon" class="fa fa fa-usd">
+                            <input type="number" id="money_sum"  placeholder="Propose Bid" title="Type in a name">
+                
+                        </i>
+
+                    </div>
+
+                    <div id="buttons">
+
+                        <input id="finalize_bid" type="submit" value="Bid">
+                        <input id="cancel_bid" type="cancel" value="Cancel">
+
+
+                    </div>
+
+
+
+
+            </form>
+            </div>
+        </div>
+</body>
+
+</html>
