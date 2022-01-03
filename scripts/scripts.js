@@ -25,6 +25,8 @@ $(document).ready(function(){
         return false;
     })
 
+    var $loginErrors = $("#login-form p");
+    $loginErrors.hide();
     var $loginButton = $("#login-button");
     var $personalProjects = $("#personal-projects");
     $personalProjects.hide();
@@ -39,9 +41,14 @@ $(document).ready(function(){
                 $accountOption.show();
                 $personalProjects.show();
             }
+            else{
+                $loginErrors.show();
+            }
         }
         return false;
     })
+
+
 
     var $projects = $("#projects");
     var $projectOptionList = $("#project-option");
@@ -58,23 +65,35 @@ $(document).ready(function(){
         }
         return false;
     });
+
+    // var $animation  = $("loadingAnimation");
+    // $animation.show();
+
     $.get( "http://jservice.io/api/random?count=10", showQuestions);
 
-
-   
 })
 function showQuestions(data) {
-    $( data ).each ( function () {    
-    $("<li>")
-    .append( $("<span>").addClass("answer").text("Answer: " + this.answer))
-     .append( $("<p>").addClass("value").text("Value: "+this.value))
-     .append($("<button>").addClass("statistics-button").text("View statistics"))
-    .appendTo("#project-list")
-    });
+    var $processing  = $("#for_loading");
+   // $processing.hide(); 
+   $processing.show(200).delay(1000);
+    setTimeout(function () {
+        $( data ).each ( function () {    
+            $("<li>")
+            .append( $("<span>").addClass("answer").text("Answer: " + this.answer))
+             .append( $("<p>").addClass("value").text("Value: "+this.value))
+             .append($("<button>").addClass("statistics-button").text("View statistics"))
+            .appendTo("#project-list")
+            });
+            $processing.fadeOut(200);
+    }, 1000);
+   
+
+   
     var $statisticsButton = $(".statistics-button");
     $statisticsButton.on("click",function(){
         console.log("press");
         window.location.replace("view-statistics.html");
         return false;
     });
+    
 } 

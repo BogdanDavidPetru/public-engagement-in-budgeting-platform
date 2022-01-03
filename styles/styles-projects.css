@@ -204,6 +204,9 @@ form span{
     font-weight: bold;
     opacity: 80%;
 }
+#compare:hover{
+    background-color: white;
+}
 .content ul li button{
     margin-left: 15%;
 }
@@ -218,7 +221,9 @@ form span{
 	text-align: center;
     margin-left: 25%;
 }
-
+#vote:hover{
+    background-color: white;
+}
 .content ul li span{
     font-size:x-large;
 }

@@ -159,7 +159,9 @@ button {
 }
 #vote{
     margin-left: 42%;
-    margin-bottom: 30px;
+    margin-bottom: 6%;
+    clear: both;
+    display: block;
 }
 #vote:hover{
     background-color: #ffffff;
@@ -260,6 +262,10 @@ form div{
 form button{
     margin:60px 40px 0px 0px ;
 }
+form button:hover{
+    background-color: #ffffff;
+    color:#9397f0;
+}
 form #login{
 	padding: 10px 30px 10px 30px;
 	background: #f0ad4e;
@@ -285,7 +291,14 @@ form #cancel {
 	font-size: medium;
 	text-align: center;
 }
-
+form #cancel:hover{
+    background-color: #ffffff;
+    color:#9397f0;
+}
+#login-form p{
+    color:red;
+    font-weight: 300;
+}
 #register i{
     	border-color: #cccccc;
 	border-width: 1px;
@@ -344,4 +357,17 @@ form #create-account {
 form #create-account:hover {
     background-color: white;
     color:#9397f0;
+}
+
+#loadingAnimation {
+    /* width: 16%;
+    margin-left: auto;
+    margin-right: auto; */
+    /* width: 200px; */
+    width: 10%;
+}
+#for_loading{
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 25%;
 }
