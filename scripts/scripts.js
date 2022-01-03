@@ -59,14 +59,22 @@ $(document).ready(function(){
         return false;
     });
     $.get( "http://jservice.io/api/random?count=10", showQuestions);
+
+
+   
 })
 function showQuestions(data) {
     $( data ).each ( function () {    
     $("<li>")
     .append( $("<span>").addClass("answer").text("Answer: " + this.answer))
      .append( $("<p>").addClass("value").text("Value: "+this.value))
-     .append($("<button>").addClass("").text("View statistics"))
+     .append($("<button>").addClass("statistics-button").text("View statistics"))
     .appendTo("#project-list")
     });
-    
+    var $statisticsButton = $(".statistics-button");
+    $statisticsButton.on("click",function(){
+        console.log("press");
+        window.location.replace("view-statistics.html");
+        return false;
+    });
 } 
