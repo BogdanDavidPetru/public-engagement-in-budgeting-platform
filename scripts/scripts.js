@@ -88,15 +88,16 @@ function showQuestions(data) {
             .appendTo("#project-list")
             });
             $processing.fadeOut(200);
-    }, 1000);
-   
-
-   
+            
     var $statisticsButton = $(".statistics-button");
     $statisticsButton.on("click",function(){
         console.log("press");
         window.location.replace("view-statistics.html");
         return false;
     });
+    }, 1000);
+   
+
+   
     
 } 
