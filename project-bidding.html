@@ -28,23 +28,26 @@
                 <li>
                     <a href="#">Home</a>
                 </li>
+                <li id="login-option">
+                    <a href="#">Login</a>
+                </li>
                 <li id="account-option">
                     <a href="account.html">Account</a>
+                </li>
+                <li id="register-option">
+                    <a href="register.html">Register</a>
                 </li>
                 <li id="projects">
                     <a href="#">Projects</a>
                     <ul id="project-option">
                         <li><a href="propose-project.html">Propose new project</a></li>
-                        <li><a href="personal-projects.html">Personal projects</a></li>
+                        <li id="personal-projects"><a href="personal-projects.html">Personal projects</a></li>
                         <li><a href="proposed-projects.html">Proposed projects</a></li>
                         <li><a href="#">Implemented projects</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Statistics</a>
-                </li>
-                <li>
-                    <a href="project-bidding.html">Bid Project</a>
                 </li>
             </ul>
         </nav>
@@ -146,7 +149,8 @@
                     </div>
 
 
-                    <input id="submitRate" type="submit" value="View more">
+                    <!-- <input id="submitRate" type="submit" value="View more"> -->
+                    <input id="submitRate" type="cancel" value="View more" onclick="location.href='project-details.html';">
                     <input id="cancelRate" type="submit" value="Bid">
 
                 </form>
