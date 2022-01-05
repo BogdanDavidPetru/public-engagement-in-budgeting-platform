@@ -1,0 +1,401 @@
+#project_details {
+    overflow: hidden;
+    border-radius: 10px;
+    /* height: 100%; */
+    /* min-height: 100%; */
+    /* display: block; */
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid grey;
+    text-align: center;
+    margin: auto;
+}
+
+#project_bidding {
+    overflow: hidden;
+    border-radius: 10px;
+    /* height: 100%; */
+    /* min-height: 100%; */
+    /* display: block; */
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid grey;
+    text-align: center;
+    margin: auto;
+    width: 56%;
+}
+
+#location,
+#deadline,
+#deadline_modal {
+    display: inline;
+    overflow: hidden;
+    border-radius: 10px;
+    /* height: 100%; */
+    /* min-height: 100%; */
+    /* display: block; */
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid grey;
+    text-align: center;
+    margin: auto;
+    width: 26%;
+    background-color: #eea236;
+}
+
+.rate-form {
+    display: block;
+    align-items: center;
+    justify-content: left;
+    background: #9397f0;
+    margin-left: 16%;
+    margin-right: 10px;
+    width: 54%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.rate-form #submitRate {
+    background-color: #684bca;
+    color: #eea236;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 0.4s;
+    width: 84%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.rate-form #cancelRate {
+    background-color: #eea236;
+    color: #684bca;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 0.4s;
+    width: 84%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.rate-form #submitRate:hover,
+#cancelRate:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+
+/** Overwrite **/
+
+.rate-form span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/** Overwrite **/
+
+.rate-form div {
+    border: none;
+}
+
+.head-of-form {
+    padding: 5px;
+    margin: 5px;
+    width: 97%;
+}
+
+.head-of-form img {
+    max-height: 100px;
+    max-width: 750px;
+    float: right;
+}
+
+.row-of-form {
+    padding: 5px;
+    margin: 5px;
+    width: 146%;
+    height: fit-content;
+}
+
+.half-row-right-of-form {
+    padding-left: 5px;
+    padding-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    width: 48%;
+}
+
+.half-row-left-of-form {
+    padding-left: 3px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    width: 48%
+}
+
+.question-body {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.header-text {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 20%;
+}
+
+.header-image {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    float: right;
+}
+
+.answer {
+    margin: 3px;
+    padding: 2px;
+}
+
+.label {
+    font-size: 0.96em;
+    text-align: left;
+}
+
+.info {
+    font-size: 1.10em;
+    font-weight: bold;
+    font-style: italic;
+    margin-block-start: -1em;
+    height: fit-content;
+}
+
+#spacer {
+    width: 20px;
+}
+
+form i {
+    border-color: #cccccc;
+    border-width: 1px;
+    border-style: none;
+    padding: 10px 15px 12px 15px;
+}
+
+#header_icon,
+#header_text,
+#header_text_modal {
+    display: inline;
+    vertical-align: middle;
+}
+
+#header_text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#header_text_modal {
+    /* font-size: 1.5em; */
+    font-weight: bold;
+    /* margin-left: 10px; */
+}
+
+h1 {
+    padding-left: 15%;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 23%;
+    padding-bottom: 1%;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 39%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#header_options {
+    /* display: block; */
+    padding-left: 17%;
+}
+
+#search_bar {
+    display: inline;
+    border-radius: 10px;
+}
+
+#myInput {
+    border-radius: 10px;
+}
+
+#myInput:focus {
+    border-width: 0px;
+}
+
+#search_icon {
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#login-form {
+    background-color: #aeb1f4;
+    ;
+}
+
+#deadline_modal {
+    width: 32%;
+    float: left;
+    clear: left;
+}
+
+form div {
+    border-width: 0;
+}
+
+#finalize_bid {
+    background-color: #684bca;
+    color: #eea236;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 0.4s;
+    /* width: 84%; */
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#cancel_bid {
+    background-color: #eea236;
+    color: #684bca;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0%;
+    border-radius: 12px;
+    border: none;
+    transition-duration: 0.4s;
+    /* width: 84%; */
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    text-align: center;
+}
+
+#cancel_bid,
+#finalize_bid {
+    width: 112%;
+}
+
+#buttons {
+    float: left;
+    clear: left;
+}
+
+#bid_money {
+    float: left;
+    clear: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#money_icon {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#money_sum {
+    margin-top: -9px;
+    height: 21px;
+    width: 301px;
+}
+
+#money_icon,
+#bid_money,
+#money_icon {
+    height: 30px;
+    width: 344px;
+}
+
+#for_loading_2 {
+    margin-left: 28%;
+    margin-top: -7%;
+    margin-bottom: -1%;
+}
+
+#loadingAnimation {
+    /* width: 200px; */
+    width: 54%;
+}
+
+input[type=number] {
+    padding: 15px 15px 15px 15px;
+    font-size: medium;
+    border-width: 0px;
+    /* border-color: #cccccc;
+	border-width: 1px;
+	border-style: solid; */
+    border-radius: 0px 3px 3px 0px;
+}
