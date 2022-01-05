@@ -3,6 +3,8 @@ $(document).ready(function(){
     $loginForm.hide();
     var $accountOption = $("#account-option");
     $accountOption.hide();
+    var $bidOption = $("#bid-option");
+    $bidOption.hide();
     var $loginOption=$("#login-option");
     var $onlyForm = $("#login-form");
     $loginOption.on("click",function(){
@@ -40,6 +42,7 @@ $(document).ready(function(){
                 $("#register-option").hide();
                 $accountOption.show();
                 $personalProjects.show();
+                $bidOption.show();
             }
             else{
                 $loginErrors.show();
