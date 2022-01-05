@@ -61,9 +61,10 @@
     border-radius: 12px;
     border: none;
     transition-duration: 0.4s;
-    width: 84%;
+    width: 80%;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+    text-align: center;
 }
 
 .rate-form #cancelRate {
