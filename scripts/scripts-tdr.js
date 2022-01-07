@@ -32,3 +32,8 @@ function removeOption(optionId) {
     document.getElementById(optionId).setAttribute("display", "none");
     document.getElementById(optionId).style.display = "none";
 }
+
+function showComparePool() {
+    document.getElementById("compare-pool").style.display = "block";
+    document.getElementById("compare-pool").setAttribute("display", "block");
+}
