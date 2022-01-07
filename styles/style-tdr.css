@@ -111,6 +111,7 @@
 
 .compare-table {
     border-spacing: 30px;
+    margin-bottom: 250px;
 }
 
 .compare-table td{
@@ -184,6 +185,7 @@
 }
 
 .comparison-pool {
+    display: block;
     position: fixed;
     top: 20%;
     left: 89%;
