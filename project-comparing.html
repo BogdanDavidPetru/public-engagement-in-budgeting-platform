@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Compare projects</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/style-tdr.css" type="text/css">
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <script src="scripts/scripts-tdr.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/094a248657.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="banner">
+    <div id="first-title"><span>Budge</span></div>
+    <img src="images/icon-badge.jpg">
+    <div><span>Tycoon</span></div>
+</div>
+<div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li id="login-option">
+                <a href="#">Login</a>
+            </li>
+            <li id="account-option">
+                <a href="account.html">Account</a>
+            </li>
+            <li id="register-option">
+                <a href="register.html">Register</a>
+            </li>
+            <li id="projects">
+                <a  href="#">Projects</a>
+                <ul id="project-option">
+                    <li><a href="propose-project.html">Propose new project</a></li>
+                    <li id="personal-projects"><a href="personal-projects.html">Personal projects</a></li>
+                    <li><a href="proposed-projects.html">Proposed projects</a></li>
+                    <li><a href="#">Implemented projects</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Statistics</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Compare projects</h1>
+        <table class="compare-table">
+            <tr>
+                <td id="option1">
+                    <p class="table-title">Mauris est</p>
+                    <div class="category" id="category1">
+                        <h2>Donec vitae viverra ante <i class="fas fa-angle-down" id="arrowCat1Opt1"></i></h2>
+                        <p class="category-details" id="cat1option1">
+                            Praesent commodo, tortor et commodo pulvinar, quam dolor aliquet mi, id sodales enim justo at lectus. Etiam sagittis suscipit enim, in vestibulum ante euismod non. Suspendisse lacinia sit amet neque.
+                        </p>
+                    </div>
+                    <div class="category" id="category2" onclick="trigger('cat2option1', 'arrowCat2Opt1', 'category2')">
+                        <h2>Praesent ultrices, ante sit <i class="fas fa-angle-down" id="arrowCat2Opt1"></i></h2>
+                        <p class="category-details" id="cat2option1" >
+                            Etiam accumsan ac eros at convallis. Quisque semper pellentesque enim, luctus sagittis odio maximus nec. Sed dignissim ac tortor non placerat. Vivamus vel sollicitudin tellus. Pellentesque habitant morbi tristique senectus.
+                        </p>
+                    </div>
+                    <div class="category" id="category3" onclick="trigger('cat3option1', 'arrowCat3Opt1', 'category3')">
+                        <h2>Duis id dignissim ipsum <i class="fas fa-angle-down" id="arrowCat3Opt1"></i></h2>
+                        <p class="category-details" id="cat3option1">
+                            Fusce dapibus felis augue, vitae efficitur metus tristique et. Nulla facilisi. Sed ullamcorper lorem a dictum venenatis. Nam a laoreet lorem. Vestibulum mollis mollis quam eget cursus. Ut sit amet.
+                        </p>
+                    </div>
+                    <div class="category" id="category4" onclick="trigger('cat4option1', 'arrowCat4Opt1', 'category4')">
+                        <h2>Lorem ipsum dolor sit <i class="fas fa-angle-down" id="arrowCat4Opt1"></i></h2>
+                        <p class="category-details" id="cat4option1">
+                            Morbi nec ullamcorper mauris. Pellentesque vehicula hendrerit sagittis. Maecenas ac sapien nulla. Sed a sapien bibendum, condimentum lacus sed, mattis metus. Nam dapibus, risus vel commodo convallis, ex urna lobortis.
+                        </p>
+                    </div>
+                    <button class="remove-comp-proj" id="rmButton1" onclick="removeOption('option1')">Remove from comparison</button>
+                </td>
+                <td id="option2">
+                    <p class="table-title">Etiam ut</p>
+                    <div class="category"  id="category5">
+                        <h2>Donec vitae viverra ante <i class="fas fa-angle-down" id="arrowCat1Opt2"></i></h2>
+                        <p class="category-details" id="cat1option2">
+                            Donec sit amet scelerisque sem, suscipit porttitor lacus. Aliquam at justo sed orci euismod aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius sodales tortor. Nam feugiat mauris.
+                        </p>
+                    </div>
+                    <div class="category" id="category6" onclick="trigger('cat2option2', 'arrowCat2Opt2', 'category6')">
+                        <h2>Praesent ultrices, ante sit <i class="fas fa-angle-down" id="arrowCat2Opt2"></i></h2>
+                        <p class="category-details" id="cat2option2">
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum sem mauris, euismod in est ac, vestibulum tempor ante. Sed id nisl dui. Nunc vel nulla lorem.
+                        </p>
+                    </div>
+                    <div class="category" id="category7" onclick="trigger('cat3option2', 'arrowCat3Opt2', 'category7')">
+                        <h2>Duis id dignissim ipsum <i class="fas fa-angle-down" id="arrowCat3Opt2"></i></h2>
+                        <p class="category-details" id="cat3option2">
+                            Fusce pulvinar orci et ligula bibendum ultricies. Suspendisse sed rutrum massa. Praesent consectetur aliquet justo, ac sodales ipsum cursus a. Nulla dictum commodo viverra. Etiam maximus ex sed ante ornare.
+                        </p>
+                    </div>
+                    <div class="category" id="category8" onclick="trigger('cat4option2', 'arrowCat4Opt2', 'category8')">
+                        <h2>Lorem ipsum dolor sit <i class="fas fa-angle-down" id="arrowCat4Opt2"></i></h2>
+                        <p class="category-details" id="cat4option2">
+                            Proin semper pellentesque nisl nec rhoncus. Sed vitae finibus lorem. Donec pharetra metus ac elit interdum posuere. Nam iaculis eget nulla euismod posuere. Maecenas ac convallis enim, et rutrum nisi.
+                        </p>
+                    </div>
+                    <button class="remove-comp-proj"  id="rmButton2" onclick="removeOption('option2')">Remove from comparison</button>
+                </td>
+                <td id="option3">
+                    <p class="table-title">Fusce imperdiet</p>
+                    <div class="category" id="category9">
+                        <h2>Donec vitae viverra ante <i class="fas fa-angle-down" id="arrowCat1Opt3"></i></h2>
+                        <p class="category-details" id="cat1option3">
+                            Donec ut nulla non sem semper eleifend sit amet et enim. Mauris sagittis eu leo a interdum. Ut vestibulum elementum elementum. Morbi ultricies nibh justo, a mollis urna gravida et.
+                        </p>
+                    </div>
+                    <div class="category" id="category10" onclick="trigger('cat2option3', 'arrowCat2Opt3', 'category10')">
+                        <h2>Praesent ultrices, ante sit <i class="fas fa-angle-down" id="arrowCat2Opt3"></i></h2>
+                        <p class="category-details" id="cat2option3">
+                            Vestibulum malesuada pharetra nisi, at egestas felis rhoncus nec. Aliquam rhoncus dui sit amet turpis luctus rhoncus. Nulla facilisi. In pharetra urna ac neque iaculis porta. Sed cursus maximus ultricies.
+                        </p>
+                    </div>
+                    <div class="category" id="category11" onclick="trigger('cat3option3', 'arrowCat3Opt3', 'category11')">
+                        <h2>Duis id dignissim ipsum <i class="fas fa-angle-down" id="arrowCat3Opt3"></i></h2>
+                        <p class="category-details" id="cat3option3">
+                            Nam feugiat consectetur arcu, id lobortis ex laoreet in. Aenean imperdiet eros vitae sem viverra, vel euismod diam sollicitudin. Etiam luctus ipsum ac lacinia feugiat. Mauris at ipsum eros. Quisque.
+                        </p>
+                    </div>
+                    <div class="category" id="category12" onclick="trigger('cat4option3', 'arrowCat4Opt3', 'category12')">
+                        <h2>Lorem ipsum dolor sit <i class="fas fa-angle-down" id="arrowCat4Opt3"></i></h2>
+                        <p class="category-details" id="cat4option3">
+                            Ut sed venenatis magna. Nulla tellus sem, dictum vitae sollicitudin sit amet, aliquet nec mauris. Nulla posuere nunc vel laoreet pharetra. Vivamus tristique lectus lorem, vel maximus felis faucibus at.
+                        </p>
+                    </div>
+                    <button class="remove-comp-proj"  id="rmButton3" onclick="removeOption('option3')">Remove from comparison</button>
+                </td>
+                <td id="option4">
+                    <p class="table-title">Nulla rhoncus</p>
+                    <div class="category" id="category13">
+                        <h2>Donec vitae viverra ante <i class="fas fa-angle-down" id="arrowCat1Opt4"></i></h2>
+                        <p class="category-details" id="cat1option4">
+                            Donec elit diam, congue a ornare id, interdum non lacus. Ut tincidunt libero placerat eros faucibus tempor. Duis ipsum sapien, semper quis ligula at, tempus varius metus. Nam in nibh.
+                        </p>
+                    </div>
+                    <div class="category" id="category14" onclick="trigger('cat2option4', 'arrowCat4Opt4', 'category14')">
+                        <h2>Praesent ultrices, ante sit <i class="fas fa-angle-down" id="arrowCat2Opt4"></i></h2>
+                        <p class="category-details" id="cat2option4">
+                            Nulla egestas ante nisi, non sagittis ipsum tempus sit amet. Nullam ut odio dui. Nulla cursus, dolor eu blandit fringilla, lacus lorem placerat velit, non posuere orci massa eu dui.
+                        </p>
+                    </div>
+                    <div class="category" id="category15" onclick="trigger('cat3option4', 'arrowCat3Opt4', 'category15')">
+                        <h2>Duis id dignissim ipsum <i class="fas fa-angle-down" id="arrowCat3Opt4"></i></h2>
+                        <p class="category-details" id="cat3option4">
+                            Morbi malesuada tristique massa sed lobortis. Sed pellentesque sem augue. Donec eu hendrerit eros. Vestibulum lacinia mi id dolor consequat vestibulum. Curabitur id quam at diam ornare vulputate. Nullam aliquam.
+                        </p>
+                    </div>
+                    <div class="category" id="category16" onclick="trigger('cat4option4', 'arrowCat4Opt4', 'category16')">
+                        <h2>Lorem ipsum dolor sit <i class="fas fa-angle-down" id="arrowCat4Opt4"></i></h2>
+                        <p class="category-details" id="cat4option4">
+                            Nulla mi diam, congue eget turpis sit amet, placerat ultricies lacus. Vestibulum suscipit massa quis tortor sollicitudin scelerisque. Phasellus ut mi sit amet purus tincidunt bibendum a quis lacus. Donec.
+                        </p>
+                    </div>
+                    <button class="remove-comp-proj"  id="rmButton4" onclick="removeOption('option4')">Remove from comparison</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Move this on the proposed projects page -->
+    <div class="comparison-pool">
+        <div class="entry" id="entry1">
+            <img src="#"/>
+            <br>
+            <p class="mini-title">Mauris est</p>
+        </div>
+        <div class="entry" id="entry2">
+            <img src="#"/>
+            <br>
+            <p class="mini-title">Etiam ut</p>
+        </div>
+        <div class="entry" id="entry3">
+            <img src="#"/>
+            <br>
+            <p class="mini-title">Fusce imperdiet</p>
+        </div>
+        <div class="entry" id="entry4">
+            <img src="#"/>
+            <br>
+            <p class="mini-title">Nulla rhoncus</p>
+        </div>
+        <button class="submit-compare">Compare</button>
+    </div>
+    <!--------------------------------------------->
+
+    <div class="backdrop">
+        <form id="login-form">
+            <div><i class="fas fa-user"></i><input type="text" id="login-email" placeholder="Phone nr or Email"></div>
+            <div><i class="fas fa-asterisk"></i><input type="password" id="login-password" placeholder="Password"></div>
+            <button id="login-button">Login</button>
+            <button id="cancel">Cancel</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
